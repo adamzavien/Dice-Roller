@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set character set and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Set the title of the webpage -->
+    <title>Dice Roller 🎲</title>
+</head>
+
+<body>
+    <!-- Heading for the Dice Roller -->
+    <h1>Dice Roller 🎲</h1>
+
+    <!-- Main container for the content -->
+    <div id="container">
+
+        <!-- Input field for the number of dice -->
+        <label for="number-of-dice">Number of Dice (s)</label>
+        <input type="number" id="number-of-dice" placeholder=" ">
+
+        <!-- Button to roll the dice, calls the rollDice function -->
+        <button id="roll-dice-button" onclick="rollDice()">Roll Dice</button>
+
+        <!-- Container to display the dice images -->
+        <div id="display-dice"></div>
+
+        <!-- Paragraph to display the total value of the dice thrown -->
+        <p id="dice-value"></p>
+    </div>
+
+    <!-- Include the JavaScript file for dice rolling logic -->
+    <script src="index.js"></script>
+</body>
+
+</html>
